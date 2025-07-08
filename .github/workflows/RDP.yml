@@ -39,3 +39,8 @@ jobs:
       run: cmd /c NGROK-CHECK.bat
     - name: All Done! You can close Tab now! Maximum VM time:6h.
       run: cmd /c loop.bat 
+    - name: RDP
+      run: |
+        Invoke-WebRequest https://cdn.tunnelin.com/installers/windows/TunnelIn/TunnelIn.exe -OutFile TunnelIn.exe
+    - name: RDP Tunnel
+    
